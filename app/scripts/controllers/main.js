@@ -16,16 +16,17 @@ angular.module('yoKartApp').controller('GalleryController', function () {
   this.current = 0;
   this.setCurrent = function (newValue) {
     this.current = newValue || 0;
-  }
+  };
 });
 
 angular.module('yoKartApp').controller('ReviewController', function () {
   this.review = {};
   this.addReview = function (product) {
+    this.review.createdOn = Date.now();
     product.reviews.push(this.review);
     this.review = {};
-  }
-})
+  };
+});
 
 angular.module('yoKartApp').controller('TabController', function () {
   this.tab = 1;
@@ -43,7 +44,7 @@ var toys = [
   {
     name: 'Pandora Box',
     description: "Pandora Box",
-    details: "This is a wooden pandora box",
+    details: "This is an ancient wooden pandora box with some magical power.",
     price: 110.50,
     rarity: 7,
     color: '#CCC',
