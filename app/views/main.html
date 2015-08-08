@@ -1,23 +1,85 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div ng-app="yoKartApp" class="container">
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+  <div class="list-group" ng-controller="MainCtrl as store">
+    <!--  Store Header  -->
+    <header>
+      <h1 class="text-center">YoKart's Imported Toys</h1>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+      <h2 class="text-center">– Children store –</h2>
+    </header>
+    <div class="list-group-item" ng-repeat="product in store.products">
+      <h3>
+        {{product.name}}
+        <em class="pull-right">{{product.price | currency}}</em>
+      </h3>
+      <!-- Image Gallery  -->
+      <div ng-controller="GalleryController as gallery" ng-show="product.images.length">
+        <img ng-src="{{product.images[gallery.current]}}"/>
+      </div>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+      <!-- Product Tabs -->
+      <section class="tab" ng-controller="TabController as tab">
+        <ul class="nav nav-pills">
+          <li ng-class="{ active: tab.isSet(1) }">
+            <a href ng-click="tab.setTab(1)">Description</a></li>
+          <li ng-class="{ active: tab.isSet(2) }">
+            <a href ng-click="tab.setTab(2)">Specs</a></li>
+          <li ng-class="{ active: tab.isSet(3) }">
+            <a href ng-click="tab.setTab(3)">Reviews</a></li>
+        </ul>
+        <div ng-show="tab.isSet(1)">
+          <h4>Description</h4>
+          <blockquote>{{product.description}}</blockquote>
+        </div>
+        <div ng-show="tab.isSet(2)">
+          <h4>Specs</h4>
+          <blockquote>Shine: {{product.shine}}</blockquote>
+        </div>
+        <div ng-show="tab.isSet(3)">
+          <ul class="list-unstyled">
+            <h4>Reviews</h4>
+            <li ng-repeat="review in product.reviews">
+              <blockquote>
+                <strong>{{review.stars}} Stars</strong>
+                {{review.body}}
+                <cite class="clearfix">--{{review.author}}</cite>
+              </blockquote>
+            </li>
+          </ul>
+
+          <!-- Review Form -->
+          <form name="reviewForm">
+            <!-- Live Preview -->
+            <blockquote>
+              <strong>{{review.stars}} Stars</strong>
+              {{review.body}}
+              <cite class="clearfix">--{{review.author}}</cite>
+            </blockquote>
+
+            <!-- Review Form -->
+            <h4>Submit a Review</h4>
+            <fieldset class="form-group">
+              <select class="form-control" ng-model="review.stars" ng-options="stars for stars in [5,4,3,2,1]"
+                      title="Stars">
+                <option value="">Rate the product</option>
+              </select>
+            </fieldset>
+            <fieldset class="form-group">
+              <textarea class="form-control" ng-model="review.body" placeholder="Write a short review of the product..."
+                        title="Review"></textarea>
+            </fieldset>
+            <fieldset class="form-group">
+              <input type="email" ng-model="review.author" class="form-control" placeholder="jimmyDean@example.org"
+                     title="Email"/>
+            </fieldset>
+            <fieldset class="form-group">
+              <input type="submit" class="btn btn-primary pull-right" value="Submit Review"/>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
 </div>
