@@ -29,6 +29,8 @@
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
     "time-grunt": "^1.0.0"
+    "gzippo":"^2.0.0",
+    "express":"2.x"
   },
   "engines": {
     "node": ">=0.10.0"
