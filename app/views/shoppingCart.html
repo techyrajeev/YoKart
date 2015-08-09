@@ -24,7 +24,7 @@
                 <!-- empty store.yoKart message -->
                 <tr ng-hide="store.yoKart.getTotalCount() > 0" >
                     <td class="tdCenter" colspan="4">
-                        Your shopping cart is empty.
+                        Your shopping cart is empty!
                     </td>
                 </tr>
 
@@ -74,18 +74,16 @@
                     class="btn btn-block btn-danger"
                     ng-click="store.yoKart.clearItems()"
                     ng-disabled="store.yoKart.getTotalCount() < 1" >
-                    <i class="glyphicon glyphicon-trash"> Clear cart</i>
+                    <i class="glyphicon glyphicon-trash"> Clear Cart</i>
                 </button>
             </p>
-
             <br />
-
             <p class="text-info">
                 <button
                     class="btn btn-block btn-primary"
-                    ng-click="store.yoKart.checkout('PayPal')"
+                    ng-click="store.go('#/')"
                     ng-disabled="store.yoKart.getTotalCount() < 1">
-                    <i class="glyphicon glyphicon-ok" /> Check out
+                    <i class="glyphicon glyphicon-ok" /> Place Order
                 </button>
             </p>
 

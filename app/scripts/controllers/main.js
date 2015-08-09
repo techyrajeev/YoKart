@@ -8,10 +8,15 @@
  * Controller of the yoKartApp
  */
 
-angular.module('yoKartApp').controller('MainCtrl',["$routeParams","ProductDataService",function ($routeParams,ProductDataService) {
+angular.module('yoKartApp').controller('MainCtrl',["$routeParams","$location","ProductDataService",function ($routeParams,$location,ProductDataService) {
 
   this.products=ProductDataService.toys;
   this.yoKart=ProductDataService.cart;
+  this.isOrderSuccess=false;
+  this.go=function(path){
+    this.yoKart.checkout();
+    $location.path(path);
+  }
 }]);
 
 

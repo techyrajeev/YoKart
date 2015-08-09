@@ -5,7 +5,7 @@ function shoppingCart(cartName) {
     this.cartName = cartName;
     this.clearCart = false;
     this.items = [];
-
+    this.isOrderSuccessful=false;
     // load items from local storage when initializing
     this.loadItems();
 
@@ -107,8 +107,10 @@ shoppingCart.prototype.clearItems = function () {
 }
 
 // check out
-shoppingCart.prototype.checkout = function (serviceName, clearCart) {
-
+shoppingCart.prototype.checkout = function () {
+  this.items = [];
+  this.saveItems();
+  this.isOrderSuccessful=true;
 }
 
 // utility methods
