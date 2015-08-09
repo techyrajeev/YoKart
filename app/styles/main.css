@@ -90,3 +90,15 @@ body {
 .ng-valid.ng-dirty {
   border-color: #78FA89;
 }
+@-moz-document url-prefix() {
+  .glyphicon-nonescaped.glyphicon-calendar:before {
+    content: "\d83d\dcc5";
+  }
+}
+
+#logo{
+  margin: 0px;
+  padding-left: 20px;
+  background-image: url('images/kart/logo_Cart.png');
+  background-repeat: no-repeat;
+}

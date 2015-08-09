@@ -7,16 +7,29 @@
 
       <h2 class="text-center">– Children store –</h2>
     </header>
+    <div class="well">
+      <a ng-disabled="store.yoKart.getTotalCount()< 1" title="go to shopping cart" href="#/cart">
+        <i class="glyphicon glyphicon-shopping-cart"></i>
+        <b>{{store.yoKart.getTotalCount()}}</b> items,
+        <b>{{store.yoKart.getTotalPrice() | currency}}</b>
+      </a>
+      <span class="pull-right" ng-show="store.yoKart.getTotalCount()< 1">Your shopping kart is empty.</span>
+      <span class="pull-right" ng-show="store.yoKart.getTotalCount()>= 1">Continue shopping or checkout.</span>
+
+    </div>
     <div class="list-group-item" ng-repeat="product in store.products">
       <h3>
         {{product.name}}
         <em class="pull-right">{{product.price | currency}}</em>
       </h3>
-      <!-- Image Gallery  -->
-      <div ng-controller="GalleryController as gallery" ng-show="product.images.length">
-        <img ng-src="{{product.images[gallery.current]}}"/>
-      </div>
 
+      <a class="btn btn-primary" ng-click="store.yoKart.addItem(product.toyId, product.name, product.price, 1)" href="">
+        <i class="glyphicon glyphicon-plus"></i>
+        Add to cart
+      </a>
+
+      <!-- Image Gallery  -->
+      <product-gallery></product-gallery>
       <!-- Product Tabs -->
       <product-tabs></product-tabs>
     </div>
