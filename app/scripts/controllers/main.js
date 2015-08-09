@@ -40,6 +40,30 @@ angular.module('yoKartApp').controller('TabController', function () {
   };
 });
 
+
+
+angular.module('yoKartApp').directive('productDescription',function(){
+  return{
+    restrict:'E',
+    templateUrl:'views/html-templates/product-description.html'
+  };
+});
+
+
+angular.module('yoKartApp').directive("productReviews", function() {
+  return {
+    restrict: 'E',
+    templateUrl: "views/html-templates/product-reviews.html"
+  };
+});
+
+angular.module('yoKartApp').directive("productSpecs", function() {
+  return {
+    restrict:"A",
+    templateUrl: "views/html-templates/product-specs.html"
+  };
+});
+
 var toys = [
   {
     name: 'Pandora Box',
