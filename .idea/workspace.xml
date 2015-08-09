@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4923fb6-d94e-4737-a845-9e297cab6fdc" name="Default" comment="Instructions to run yokart in ReadMe.md...">
+    <list default="true" id="d4923fb6-d94e-4737-a845-9e297cab6fdc" name="Default" comment="Modification in instructions to run yokart in ReadMe.md...">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -132,8 +132,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31456953">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.9403973">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -414,7 +414,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439152475403</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modification in instructions to run yokart in ReadMe.md...">
+      <created>1439153477400</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1439153477400</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -482,7 +488,8 @@
     <MESSAGE value="Finishing touch..." />
     <MESSAGE value="lOGO ADDED..." />
     <MESSAGE value="Instructions to run yokart in ReadMe.md..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Instructions to run yokart in ReadMe.md..." />
+    <MESSAGE value="Modification in instructions to run yokart in ReadMe.md..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification in instructions to run yokart in ReadMe.md..." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -723,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31456953">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.9403973">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
