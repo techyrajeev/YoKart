@@ -95,10 +95,32 @@ body {
     content: "\d83d\dcc5";
   }
 }
+.navbar {
+  margin:0;
+}
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+.brand-name {
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+}
 
-#logo{
-  margin: 0px;
-  padding-left: 20px;
-  background-image: url('images/kart/logo_Cart.png');
-  background-repeat: no-repeat;
+.nav-container {
+  padding:0;
+}
+
+.navbar-custom {
+  font-size: 20px;
+  background-color: #FFF;
+}
+.navbar .nav > li > a {
+  line-height: 50px;
+}
+.navbar .img-responsive2{
+  width:80px;
 }

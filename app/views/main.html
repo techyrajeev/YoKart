@@ -13,7 +13,7 @@
     <div class="well">
       <a ng-disabled="store.yoKart.getTotalCount()< 1" title="go to shopping cart" href="#/cart">
         <i class="glyphicon glyphicon-shopping-cart"></i>
-        <b>{{store.yoKart.getTotalCount()}}</b> items,
+        Total <b>{{store.yoKart.getTotalCount()}}</b> items,
         <b>{{store.yoKart.getTotalPrice() | currency}}</b>
       </a>
       <span class="pull-right" ng-show="store.yoKart.getTotalCount()< 1">Your shopping cart is empty.</span>
@@ -29,6 +29,11 @@
       <a class="btn btn-primary" ng-click="store.yoKart.addItem(product.toyId, product.name, product.price, 1)" href="">
         <i class="glyphicon glyphicon-plus"></i>
         Add to cart
+      </a>
+      <a class="pull-right" ng-hide="store.yoKart.getTotalCount()< 1" title="go to shopping cart" href="#/cart">
+        Goto <i class="glyphicon glyphicon-shopping-cart"></i>
+        <b>{{store.yoKart.getTotalCount()}}</b> items,
+        <b>{{store.yoKart.getTotalPrice() | currency}}</b>
       </a>
 
       <!-- Image Gallery  -->
