@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4923fb6-d94e-4737-a845-9e297cab6fdc" name="Default" comment="Modification in instructions to run yokart in ReadMe.md...">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    <list default="true" id="d4923fb6-d94e-4737-a845-9e297cab6fdc" name="Default" comment="Formatting ReadMe.md">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YoKart.iws" />
@@ -420,7 +419,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439153477400</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Formatting ReadMe.md">
+      <created>1439154637311</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1439154637311</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,7 +494,8 @@
     <MESSAGE value="lOGO ADDED..." />
     <MESSAGE value="Instructions to run yokart in ReadMe.md..." />
     <MESSAGE value="Modification in instructions to run yokart in ReadMe.md..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification in instructions to run yokart in ReadMe.md..." />
+    <MESSAGE value="Formatting ReadMe.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Formatting ReadMe.md" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
