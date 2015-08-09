@@ -28,18 +28,24 @@ angular.module('yoKartApp').controller('ReviewController', function () {
   };
 });
 
-angular.module('yoKartApp').controller('TabController', function () {
-  this.tab = 1;
+angular.module('yoKartApp').directive("productTabs",function(){
+  return{
+    restrict:'E',
+    templateUrl:'views/html-templates/product-tabs.html',
+    controller:function(){
+      this.tab = 1;
 
-  this.setTab = function (newValue) {
-    this.tab = newValue;
-  };
+      this.isSet = function(checkTab) {
+        return this.tab === checkTab;
+      };
 
-  this.isSet = function (tabName) {
-    return this.tab === tabName;
+      this.setTab = function(setTab) {
+        this.tab = setTab;
+      };
+    },
+    controllerAs:'tab'
   };
 });
-
 
 
 angular.module('yoKartApp').directive('productDescription',function(){
