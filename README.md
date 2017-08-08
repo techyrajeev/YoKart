@@ -14,16 +14,19 @@ yo-kart uses a number of open source projects to work properly:
 Before running this project, you will need the following:
 
     - Node.js v0.10.x+
-        https://nodejs.org/download/
-    - npm (which comes bundled with Node) v2.1.0+
+    
+    Download it from here
+    https://nodejs.org/download/
+    
+    npm (which comes bundled with Node) v2.1.0+
 ```sh
-        npm install --global npm@latest
+    npm install --global npm@latest
 ```
     - git
         http://git-scm.com/
     - grunt,bower and yo
 ```sh
-        npm install --global yo bower grunt-cli
+    npm install --global yo bower grunt-cli
 ```
 ## Cloning the yokart
 - using git checkout the yokart project to local system
